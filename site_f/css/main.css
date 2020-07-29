@@ -143,4 +143,7 @@ html{
 		flex-direction: row;
 		align-content: center;
 	}
+	.p_1_sym{
+		display: none;
+	}
 }
