@@ -140,7 +140,7 @@ html{
 
 	.row {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-content: center;
 	}
 	.p_1_sym{
