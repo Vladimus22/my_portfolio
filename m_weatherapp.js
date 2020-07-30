@@ -7,7 +7,7 @@ var my_key = '149234349fa5230cb31be186bd245a3d';
 
 
 button.addEventListener('click', function(){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+input_value.value+'&appid='+my_key)
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+input_value.value+'&appid='+my_key)
     .then(response => response.json())
     .then(data => {
         var name_value = data['name'];
