@@ -21,3 +21,4 @@ button.addEventListener('click', function(){
 
 .catch(err => alert('Wrong city name!'))
 })
+//..
