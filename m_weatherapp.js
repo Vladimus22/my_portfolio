@@ -7,7 +7,7 @@ var my_key = config.API_KEY;
 
 
 button.addEventListener('click', function(){
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+input_value.value+'&appid='+my_key)
+    fetch('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q='+input_value.value+'&appid='+my_key)
     .then(response => response.json())
     .then(data => {
         var name_value = data['name'];
