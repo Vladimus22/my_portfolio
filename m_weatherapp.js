@@ -3,7 +3,7 @@ var input_value = document.querySelector('.input_value');
 var city_name = document.querySelector('.city-name');
 var info = document.querySelector('.info');
 var temperature = document.querySelector('.temperature');
-var my_key = config.API_KEY;
+var my_key = '149234349fa5230cb31be186bd245a3d';
 
 
 button.addEventListener('click', function(){
