@@ -10,43 +10,52 @@
 <body>
     <div class="main-panel">
         <div class="main-title"><h1>UI Контроллеры</h1></div>
-        <div class="container">
-            <h1>Реле</h1>
-            <!--toggle 1-->
-            <label class="switch">
-                <input type="checkbox" checked id="checkbox" class="checkbox" onclick="setToggle1()">
-                <span class="slider"></span>
-                <span class="on-text" id="toggle-on">ON</span>
-                <span class="off-text" id="toggle-off">OFF</span>
-            </label>
-            <!--toggle 2-->
-            <label class="switch">
-                <input type="checkbox" id="checkbox2" class="checkbox" onclick="setToggle2()">
-                <span class="slider"></span>       
-                <span class="on-text" id="toggle-on2">ON</span>
-                <span class="off-text" id="toggle-off2">OFF</span>        
-            </label>
-            <!--toggle 3-->
-            <label class="switch">
-                <input type="checkbox" id="checkbox3" checked class="checkbox" onclick="setToggle3()">
-                <span class="slider"></span>       
-                <span class="on-text" id="toggle-on3">ON</span>
-                <span class="off-text" id="toggle-off3">OFF</span>        
-            </label>
-            <hr>
-            <h1>Диммер</h1>           
-            <!-- <input type="range" name="dimmer" value="50" min="0" max="100"> -->
-            <div class="dimmer-wrap">            
-                <div class="wrap">
-                    <input type="range" class="range" min="0" max="100" step="1" value="50" name="dimmer">
-                    <div class="track">
-                    <div class="track-inner"></div>
+       
+            <div class="controller-panel">            
+                <h1>РЕЛЕ</h1>
+                <hr>
+                <div class="relay-container">
+                    <!--toggle 1-->
+                    <label class="switch">
+                        <input type="checkbox" checked id="checkbox" class="checkbox" onclick="setToggle1()">
+                        <span class="slider"></span>
+                        <span class="on-text" id="toggle-on">ON</span>
+                        <span class="off-text" id="toggle-off">OFF</span>
+                    </label>
+                    <!--toggle 2-->
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox2" class="checkbox" onclick="setToggle2()">
+                        <span class="slider"></span>       
+                        <span class="on-text" id="toggle-on2">ON</span>
+                        <span class="off-text" id="toggle-off2">OFF</span>        
+                    </label>
+                </div>                
+            </div>                
+            <div class="controller-panel">
+                <h1>ДИММЕР + РЕЛЕ</h1> 
+                <hr>
+                <div class="dimmer-wrap">            
+                    <div class="wrap">
+                        <input type="range" class="range" min="0" max="100" step="1" value="50" name="dimmer">
+                        <div class="track">
+                        <div class="track-inner"></div>
+                        </div>
+                        <div class="thumb"></div>
                     </div>
-                    <div class="thumb"></div>
+                    <div class="value"></div> 
+                    <!--toggle 3-->
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox3" checked class="checkbox" onclick="setToggle3()">
+                        <span class="slider"></span>       
+                        <span class="on-text" id="toggle-on3">ON</span>
+                        <span class="off-text" id="toggle-off3">OFF</span>        
+                    </label>
                 </div>
-                <div class="value"></div> 
             </div>
-        </div>
+                      
+            <!-- <input type="range" name="dimmer" value="50" min="0" max="100"> -->
+            
+       
     </div>
     <script src="./animationsControls.js"></script>
     <!-- <script src="./slider.js"></script> -->
