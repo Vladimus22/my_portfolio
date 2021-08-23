@@ -31,7 +31,7 @@
                     </label>
                 </div>                
             </div>                
-            <div class="controller-panel">
+            <div class="controller-panel" id="dimmer-wrap">
                 <h1>ДИММЕР + РЕЛЕ</h1> 
                 <hr>
                 <div class="dimmer-wrap">            
@@ -45,11 +45,19 @@
                     <div class="value"></div> 
                     <!--toggle 3-->
                     <label class="switch">
-                        <input type="checkbox" id="checkbox3" checked class="checkbox" onclick="setToggle3()">
+                        <input type="checkbox" id="checkbox3" checked class="checkbox3" onclick="setToggle3(), switchRelay()">
                         <span class="slider"></span>       
                         <span class="on-text" id="toggle-on3">ON</span>
                         <span class="off-text" id="toggle-off3">OFF</span>        
                     </label>
+                </div>
+                <hr>
+                <div class="dimmer-buttons-wrap">
+                    <a href="#" class="btn" onclick="Min()">MIN</a>
+                    <a href="#" class="btn" onclick="Quarter()">25%</a>
+                    <a href="#" class="btn" onclick="Half()">50%</a>
+                    <a href="#" class="btn" onclick="SeventyFive()">75%</a>
+                    <a href="#" class="btn" onclick="Max()">MAX</a>
                 </div>
             </div>
                       
