@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap" rel="stylesheet">
+    <title>VladFil: Quiz-Game of Thrones</title>
+</head>
+<body>
+    <div class="app">
+        <div class="container-questions" id="container-questions">
+            <div class="question" id="question">               
+                <div class="question-text">
+                        <p>Выберите животное из предложенных ниже вариантов</p>
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[1].addPoints()">Дракон</button>
+                    <button onclick="houses[0].addPoints()">Кречет</button>
+                    <button onclick="houses[3]">Вепрь</button>
+                    <button onclick="houses[2].addPoints()">Кот</button>
+                    <button onclick="">Другое</button>
+                </div>                             
+            </div>
+            <div class="question" id="question">               
+                <div class="question-text">
+                        <p>Вы любите читать?</p>
+                </div>                    
+                <div class="question-buttons">
+                    <button onclick="houses[1].addPoints()">Да</button>
+                    <button onclick="houses[2].addPoints()">Нет</button>
+                    <button onclick="">Затрудняюсь ответить</button>                    
+                </div>                             
+            </div>  
+            <button onclick="calculateResult()">Завершить тест</button>          
+        </div>
+        <div class="result" id="result">
+            <p id="result-message">Heloo</p>
+        </div>
+    </div>
+    <!-- Вы любите читать?
+    <button onclick="houses[0].addPoints()">Yes</button>
+    <button onclick="houses[1].addPoints()">No</button> -->
+    <script src="./main.js"></script>
+</body>
+</html>
